@@ -1,6 +1,6 @@
 const Product = require('../models/product.model');
 
-exports.listTransactions = async (req, res) => {
+const listTransactions = async (req, res) => {
     const { page = 1, perPage = 10, month } = req.query;
     const query = {};
 
@@ -39,3 +39,5 @@ exports.listTransactions = async (req, res) => {
         res.status(500).json({ message: 'Server Error' });
     }
 };
+
+module.exports = { listTransactions }

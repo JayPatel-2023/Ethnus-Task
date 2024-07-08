@@ -8,7 +8,7 @@ const app = express();
 connectDB();
 
 // Define routes
-app.use('/api', routes);
+app.use('/api/v1', routes);
 
 const PORT = process.env.PORT || 5000;
 

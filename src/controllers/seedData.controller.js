@@ -1,5 +1,5 @@
 const axios = require('axios');
-const Product = require('../models/Product');
+const Product = require('../models/product.model');
 
 // Function to fetch data from the third-party API and seed the database
 const seedDatabase = async (req, res) => {
@@ -22,4 +22,4 @@ const seedDatabase = async (req, res) => {
     }
 };
 
-module.exports = { seedDatabase }; // Export the seedDatabase function
+module.exports = { seedDatabase }; 
